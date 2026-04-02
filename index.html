@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS Adwords | Engenharia de Performance e Tecnologia</title>
+    <style>
+        :root { --bg-dark: #030b14; --bg-section: #0a192f; --primary: #00d2ff; --secondary: #3a86ff; --text-main: #e6f1ff; --text-muted: #8892b0; }
+        body { margin: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; }
+        h1, h2, h3 { line-height: 1.2; margin-top: 0; }
+        a { text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: rgba(3, 11, 20, 0.95); padding: 20px 0; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0, 210, 255, 0.1); }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 28px; font-weight: 900; letter-spacing: 1px; }
+        .logo span { color: var(--primary); }
+        .trust-badges { font-size: 14px; color: var(--primary); font-weight: bold; border: 1px solid var(--primary); padding: 5px 15px; border-radius: 20px; }
+
+        /* Hero Section */
+        .hero { padding: 120px 0 80px; text-align: center; background: radial-gradient(circle at center, #0a192f 0%, #030b14 100%); }
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; }
+        .hero h1 span { background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.3rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 40px; }
+        .btn-cta { background: linear-gradient(90deg, var(--secondary), var(--primary)); color: #fff; padding: 18px 40px; font-size: 1.2rem; font-weight: bold; border-radius: 50px; display: inline-block; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3); }
+        .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0, 210, 255, 0.5); }
+
+        /* Pain & Authority Section */
+        .authority { padding: 80px 0; background-color: var(--bg-section); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .authority-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .authority h2 { font-size: 2.5rem; color: var(--primary); }
+        .authority p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 20px; text-align: justify; }
+        .quote { font-style: italic; border-left: 4px solid var(--primary); padding-left: 20px; margin: 30px 0; color: #fff; font-size: 1.2rem; }
+
+        /* Services Section */
+        .services { padding: 100px 0; }
+        .services-header { text-align: center; margin-bottom: 60px; }
+        .services-header h2 { font-size: 3rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .service-card { background: var(--bg-section); padding: 40px; border-radius: 10px; border: 1px solid rgba(0, 210, 255, 0.1); transition: all 0.3s ease; position: relative; overflow: hidden; }
+        .service-card:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .service-number { position: absolute; top: -10px; right: 10px; font-size: 5rem; font-weight: 900; color: rgba(255,255,255,0.03); }
+        .service-card h3 { font-size: 1.5rem; color: var(--primary); margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
+        .service-card ul { list-style: none; padding: 0; margin: 0; }
+        .service-card li { margin-bottom: 15px; font-size: 0.95rem; color: var(--text-muted); }
+        .service-card li strong { color: #fff; display: block; margin-bottom: 5px; }
+
+        /* Footer CTA */
+        .footer-cta { text-align: center; padding: 100px 0; background: linear-gradient(0deg, var(--bg-section) 0%, var(--bg-dark) 100%); }
+        .footer-cta h2 { font-size: 3rem; margin-bottom: 20px; }
+        .contact-info { margin-top: 40px; font-size: 1.2rem; color: var(--text-muted); }
+        .contact-info a { color: var(--primary); font-weight: bold; }
+   @media (max-width: 768px) {
+    /* Força o texto e a foto a ficarem um embaixo do outro no celular */
+    .pain-grid, .split-layout { 
+        grid-template-columns: 1fr !important; 
+        flex-direction: column !important;
+        gap: 30px !important; 
+    }
+    /* Garante que a foto não vaze da tela do celular */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+} 
+   </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-content">
+        <div class="logo">WS <span>ADWORDS</span></div>
+        <div class="trust-badges">12 Anos de Mercado | Google Partner</div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>O fim do amadorismo digital:<br>Sua empresa com <span>Tecnologia de Big Tech</span>.</h1>
+        <p>Não construímos apenas sites. Desenvolvemos ativos de alta performance em código puro, projetados para dominar o Google, reduzir seu custo por clique e converter tráfego em lucro real.</p>
+        <a href="https://wa.me/5516996480799" class="btn-cta">Falar com um Estrategista Agora</a>
+    </div>
+</section>
+
+<section class="authority">
+    <div class="container authority-grid">
+        <div>
+            <h2>Por que o Código Puro é o seu maior trunfo?</h2>
+            <p>A maioria das agências entrega sites em WordPress que são verdadeiros "Frankensteins" digitais: pesados, dependentes de plugins que quebram e extremamente lentos. Na WS ADWORDS, eliminamos o lixo digital. Escrevemos cada linha de código manualmente.</p>
+            <div class="quote">"Código puro não é um luxo, é a diferença entre ser encontrado ou ser ignorado pelo algoritmo do Google."</div>
+            <p>A latência de um segundo pode custar 20% da sua conversão. Quando seu site carrega em milissegundos, seu Índice de Qualidade no Google Ads dispara. Isso significa que você paga menos por cada clique enquanto seu concorrente desperdiça dinheiro tentando carregar um site pesado.</p>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Código Puro e Tecnologia" style="width: 100%; border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(0, 210, 255, 0.2);">
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="services-header">
+            <h2>Muito além de uma página.<br><span style="color: var(--primary);">Uma máquina de vendas 360°.</span></h2>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">Saia do ciclo de agências que entregam "postzinhos". Entregamos infraestrutura de vendas e inteligência de dados aplicada ao seu faturamento através de 11 pilares fundamentais.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Serviço 1 -->
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>Projeto Estratégico de Marketing</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Funciona como a bússola do negócio. Entregamos uma análise profunda da concorrência e desenhamos a Persona exata. Isso garante que todas as ações futuras tenham um norte claro, evitando desperdício de verba e gerando o maior ROI possível.</li>
+                    <li><strong>Impacto no SEO:</strong> Ao mapear a Persona e a concorrência antes de tudo, a estrutura do site e a escolha das palavras-chave já nascem otimizadas para a intenção de busca real do usuário, acelerando o ranqueamento orgânico.</li>
+                    <li><strong>Impacto no Ads:</strong> Campanhas baseadas em um projeto estratégico prévio têm anúncios e páginas de destino perfeitamente alinhados com a dor do cliente. Essa congruência é exatamente o que o Google exige para dar nota máxima (10/10) e baixar o custo do clique.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 2 -->
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>Sites de Alta Performance (Código Puro)</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Entrega de um site que carrega em milissegundos (menos de 1 segundo), sem as falhas de segurança, lentidão e "lixo digital" de plataformas como o WordPress. É uma ferramenta focada em conversão imediata.</li>
+                    <li><strong>Impacto no SEO:</strong> O Google prioriza sites rápidos (Core Web Vitals). O uso de HTML5 semântico e CSS3 limpo permite que os robôs do Google leiam e indexem o conteúdo instantaneamente, favorecendo o ranqueamento orgânico.</li>
+                    <li><strong>Impacto no Ads:</strong> A "Experiência na Página de Destino" é um dos pilares do Índice de Qualidade. Um site ultra-rápido reduz drasticamente a taxa de rejeição. O Google premia essa eficiência cobrando um CPC muito menor nos leilões.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 3 -->
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Gestão de Tráfego Pago (Ads)</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Atração de leads que estão no momento exato de compra, utilizando a verba de forma cirúrgica para maximizar o lucro. Gestão focada em ROI e não em métricas de vaidade.</li>
+                    <li><strong>Impacto no SEO:</strong> Gera tráfego imediato e dados valiosos sobre quais palavras-chave realmente convertem, permitindo retroalimentar e refinar a estratégia de SEO orgânico.</li>
+                    <li><strong>Impacto no Ads:</strong> A criação de listas rigorosas de palavras-chave negativas bloqueia cliques curiosos. Isso aumenta a Taxa de Cliques (CTR) esperada, o que eleva a nota geral da campanha e reduz o custo de aquisição.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 4 -->
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>SEO Orgânico Técnico e Semântico</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Posicionamento orgânico focado em intenção de compra e palavras-chave de cauda longa, atraindo clientes qualificados sem pagar por cada clique. Estratégia de guerrilha digital.</li>
+                    <li><strong>Impacto no SEO:</strong> Implementação nativa de hierarquia de tags (H1, H2, H3) e dados estruturados (Schema Markup). Isso "mastiga" a informação para o Google, transformando o site em uma autoridade reconhecida no nicho.</li>
+                    <li><strong>Impacto no Ads:</strong> A alta relevância semântica do texto da página com os termos pesquisados eleva a nota de "Relevância do Anúncio", barateando ainda mais as campanhas pagas.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 5 -->
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Copywriting de Elite</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Textos persuasivos que atuam como um "vendedor 24 horas". Narrativas que eliminam objeções, usam gatilhos mentais e guiam o visitante diretamente para o botão de contato.</li>
+                    <li><strong>Impacto no SEO:</strong> Melhora a legibilidade e mantém o usuário mais tempo na página lendo o conteúdo, o que sinaliza ao Google que o site é altamente relevante para aquela busca.</li>
+                    <li><strong>Impacto no Ads:</strong> Textos que retêm a atenção evitam que o usuário clique no anúncio e volte rapidamente para o buscador, garantindo uma nota alta na experiência pós-clique.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 6 -->
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>Inteligência de Dados (Analytics)</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Transparência total. Instalação de GA4 e rastreamento de conversões. O cliente sabe exatamente de onde vem cada venda e qual o custo de aquisição.</li>
+                    <li><strong>Impacto no SEO e Ads:</strong> Permite focar os esforços (e a verba) apenas nas páginas e palavras-chave que geram lucro real, eliminando achismos da operação.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 7 -->
+            <div class="service-card">
+                <div class="service-number">07</div>
+                <h3>Automação de Vendas e CRM</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Qualificação automática e atendimento instantâneo, garantindo que o lead gerado pelo site não esfrie por demora na resposta. Integração de fluxos de WhatsApp.</li>
+                    <li><strong>Impacto no Ads:</strong> Embora não afete o algoritmo do Google diretamente, garante que o investimento feito no clique não seja desperdiçado na etapa comercial, mantendo o ROI da campanha positivo.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 8 -->
+            <div class="service-card">
+                <div class="service-number">08</div>
+                <h3>Otimização de Google Meu Negócio</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Coloca a empresa no topo do mapa da região, atraindo clientes locais diariamente para o balcão ou WhatsApp. Domínio da geolocalização.</li>
+                    <li><strong>Impacto no SEO:</strong> É a base do SEO Local. A otimização de descrições e gestão de avaliações cria citações fortes que aumentam a autoridade regional do domínio principal.</li>
+                    <li><strong>Impacto no Ads:</strong> Permite o uso eficiente de extensões de local nos anúncios, aumentando o espaço visual do anúncio e a taxa de cliques (CTR).</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 9 -->
+            <div class="service-card">
+                <div class="service-number">09</div>
+                <h3>Social Media e Roteirização</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Posicionamento de marca profissional que educa o mercado, gera desejo e ataca as dores do consumidor final. Criação de roteiros para vídeos curtos.</li>
+                    <li><strong>Impacto no SEO:</strong> Gera tráfego social para o site e aumenta as buscas pelo nome da marca (Brand Search), um forte sinal de autoridade para o algoritmo do Google.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 10 -->
+            <div class="service-card">
+                <div class="service-number">10</div>
+                <h3>Consultoria de Viabilidade de Negócio</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Auditoria da oferta, preço e atendimento antes de iniciar qualquer campanha. Evita que o cliente queime dinheiro anunciando um produto que não está pronto para o mercado.</li>
+                    <li><strong>Impacto no SEO e Ads:</strong> Garante que todo o tráfego gerado seja direcionado para uma estrutura sólida, mantendo as taxas de conversão altas e justificando o investimento na agência.</li>
+                </ul>
+            </div>
+
+            <!-- Serviço 11 -->
+            <div class="service-card">
+                <div class="service-number">11</div>
+                <h3>Inteligência Artificial Aplicada</h3>
+                <ul>
+                    <li><strong>Benefício para o Cliente:</strong> Usamos a IA internamente em todas as areas da WS e otimizar nossas entregas com velocidade e precisão. Mas o grande diferencial é a implementação de IA na operação do próprio cliente. Isso aumenta a produtividade da equipe dele e multiplica o retorno financeiro.</li>
+                    <li><strong>Impacto no SEO:</strong> A IA nos permite escalar a criação de conteúdo semântico e a otimização de código de forma muito mais rápida, mantendo o site sempre atualizado aos olhos do Google.</li>
+                    <li><strong>Impacto no Ads:</strong> Um cliente que possui IA implementada no seu atendimento responde aos leads instantaneamente. Isso garante que o tráfego pago não seja desperdiçado, fechando o ciclo de vendas com perfeição.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer-cta">
+    <div class="container">
+        <h2>Pronto para escalar seu faturamento?</h2>
+        <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 40px;">Enquanto seus concorrentes lutam com sites lentos e pesados, sua empresa operará com a tecnologia das Big Techs.</p>
+        <a href="https://wa.me/5516996480799" class="btn-cta">Solicitar Análise do Meu Negócio</a>
+
+        <div class="contact-info">
+            <p>WhatsApp: <a href="https://wa.me/5516996480799">(16) 99648-0799</a></p>
+            <p>E-mail: <a href="mailto:wsagenciadigital@gmail.com">wsagenciadigital@gmail.com</a></p>
+            <p style="margin-top: 40px; font-size: 0.9rem;">© 2026 WS ADWORDS - Inteligência Digital em Código Puro.</p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
