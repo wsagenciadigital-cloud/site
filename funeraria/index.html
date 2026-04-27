@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Especialista em Google Ads para Funerárias. 12 anos de experiência. Reduza seu CPC com sites de elite em código puro. Estratégia nacional de performance e conversão.">
+    <meta name="author" content="WS Adwords">
+    <title>Google Ads para Funerárias | Performance de Elite | WS Adwords</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --gold-primary: #d4af37;
+            --gold-hover: #b8860b;
+            --black-deep: #050505;
+            --black-surface: #111111;
+            --white-pure: #ffffff;
+            --gray-text: #a0a0a0;
+            --whatsapp: #25d366;
+        }
+
+        /* Reset e Base */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: 'Lexend', sans-serif; 
+            background-color: var(--black-deep); 
+            color: var(--white-pure); 
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 30px; }
+
+        /* Header fixo para evitar cortes */
+        header {
+            background-color: rgba(5, 5, 5, 0.95);
+            padding: 25px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo { 
+            font-size: 1.8rem; 
+            font-weight: 900; 
+            letter-spacing: 6px; 
+            color: var(--gold-primary); 
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section Impactante */
+        .hero {
+            padding: 140px 0 100px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                        url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            border-bottom: 4px solid var(--gold-primary);
+        }
+        h1 { 
+            font-size: clamp(2.8rem, 7vw, 4.8rem); 
+            font-weight: 900; 
+            line-height: 1.1; 
+            margin-bottom: 30px; 
+        }
+        h1 span { color: var(--gold-primary); }
+        .hero-sub { 
+            font-size: 1.5rem; 
+            color: #ddd; 
+            max-width: 950px; 
+            margin: 0 auto 50px; 
+            font-weight: 300;
+        }
+
+        /* Botão de Alta Performance */
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-hover) 100%);
+            color: #000;
+            padding: 25px 65px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s;
+            box-shadow: 0 15px 45px rgba(212, 175, 55, 0.3);
+        }
+        .cta-btn:hover {
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.5);
+        }
+
+        /* Seção de Conteúdo Autoral (SEO) */
+        .content-rich { padding: 120px 0; background-color: var(--black-surface); }
+        .content-rich h2 { font-size: 2.8rem; margin-bottom: 50px; text-align: center; }
+        .content-rich h2 span { color: var(--gold-primary); }
+        
+        .article { max-width: 950px; margin: 0 auto; font-size: 1.25rem; color: #ddd; }
+        .article p { margin-bottom: 30px; }
+        .article strong { color: var(--gold-primary); }
+
+        /* Grid de Benefícios Técnicos */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px; margin-top: 70px; }
+        .card {
+            background: #000;
+            padding: 50px;
+            border: 1px solid #222;
+            border-radius: 8px;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover { border-color: var(--gold-primary); transform: translateY(-10px); }
+        .card h3 { font-size: 1.8rem; color: var(--gold-primary); margin-bottom: 20px; }
+        .card p { color: var(--gray-text); font-size: 1.15rem; }
+
+        /* Tabela Comparativa de Elite */
+        .comparison { padding: 120px 0; }
+        .comparison-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 60px; 
+            background: #111; 
+            border-radius: 12px; 
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        .comparison-table th, .comparison-table td { padding: 30px; text-align: center; border: 1px solid #222; }
+        .comparison-table th { background: #000; color: var(--gold-primary); font-size: 1.4rem; text-transform: uppercase; }
+        .highlight { background: rgba(212, 175, 55, 0.05); border: 2px solid var(--gold-primary) !important; font-weight: 700; }
+
+        /* FAQ Semântico */
+        .faq { padding: 100px 0; background: var(--black-surface); }
+        .faq-item { margin-bottom: 35px; padding: 40px; background: #080808; border-radius: 8px; border-left: 4px solid var(--gold-primary); }
+        .faq-q { font-weight: 900; font-size: 1.4rem; color: var(--gold-primary); margin-bottom: 15px; }
+        .faq-a { color: #ccc; font-size: 1.2rem; }
+
+        /* Footer */
+        footer { padding: 100px 0 50px; text-align: center; border-top: 1px solid #222; background: #000; }
+        .footer-info { margin-bottom: 30px; }
+        .copyright { color: #444; font-size: 1rem; margin-top: 20px; }
+
+        /* WhatsApp Flutuante */
+        .wa-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background: var(--whatsapp);
+            color: #fff;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            text-decoration: none;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            z-index: 9999;
+            transition: 0.3s;
+        }
+        .wa-float:hover { transform: scale(1.1) rotate(10deg); }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            .hero-sub { font-size: 1.2rem; }
+            .cta-btn { width: 100%; text-align: center; padding: 22px; font-size: 1.2rem; }
+            .grid { grid-template-columns: 1fr; }
+            .comparison-table { display: block; overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="https://wa.me/5516996480799" class="wa-float" target="_blank" aria-label="Falar no WhatsApp">
+    <span style="font-style: normal;">📱</span>
+</a>
+
+<header>
+    <div class="container">
+        <div class="logo">WS ADWORDS</div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Pare de <span>queimar dinheiro</span> no Google Ads da sua Funerária.</h1>
+        <p class="hero-sub">Domine o pronto atendimento nacional com a única agência que une 12 anos de experiência estratégica à tecnologia de <strong>Código Puro</strong> para conversão extrema.</p>
+        <a href="https://wa.me/5516996480799" class="cta-btn">Quero Resultados de Elite</a>
+    </div>
+</section>
+
+<section class="content-rich">
+    <div class="container">
+        <h2>A Ciência por trás da <span>Alta Conversão Funerária</span></h2>
+        <div class="article">
+            <p>Se você é dono de uma funerária, você sabe que cada segundo conta. No Google Ads, o cenário não é diferente. Enquanto a maioria das agências "aventureiras" empilha plugins pesados em sites de WordPress, a <strong>WS Adwords</strong> desenvolve ferramentas de guerra.</p>
+            <p>Nosso diferencial não é apenas o tempo de mercado. Ao longo de <strong>12 anos</strong>, mapeamos o comportamento do cliente em luto. Descobrimos que a velocidade de carregamento e a clareza técnica da página são os fatores que definem quem fica com o pronto atendimento e quem apenas "doa" dinheiro para o Google.</p>
+            <p><strong>Por que o Código Puro?</strong> Quando eliminamos scripts desnecessários, o seu <strong>Índice de Qualidade</strong> dispara. Para o Google, sua página torna-se a resposta perfeita. O resultado prático? Você aparece no topo, mas paga um <strong>CPC significativamente menor</strong> que o seu concorrente que usa sites lentos.</p>
+            <p>Nós não gerenciamos apenas anúncios; nós blindamos sua operação contra suspensões indevidas por "conteúdo sensível" e otimizamos cada centavo para que o retorno seja imediato.</p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Performance Fatal</h3>
+                <p>Nossos sites carregam em milissegundos. No setor funerário, a urgência é a regra. Quem carrega primeiro, atende primeiro.</p>
+            </div>
+            <div class="card">
+                <h3>Blindagem de Conta</h3>
+                <p>Conhecemos todas as políticas do Google para serviços funerários. Evitamos bloqueios que paralisam seu faturamento.</p>
+            </div>
+            <div class="card">
+                <h3>Inteligência de Dados</h3>
+                <p>Mapeamento de palavras-chave negativas que só 12 anos de chão podem proporcionar. Pare de pagar por cliques curiosos.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="comparison">
+    <div class="container">
+        <h2 style="text-align: center; font-size: 2.5rem;">O Padrão de Mercado vs. <span>O Método WS Adwords</span></h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Critério</th>
+                    <th>Agência Comum</th>
+                    <th class="highlight">WS Adwords</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estrutura Técnica</td>
+                    <td>WordPress / Elementor (Lento)</td>
+                    <td class="highlight">Código Puro (Ultra-Rápido)</td>
+                </tr>
+                <tr>
+                    <td>Índice de Qualidade</td>
+                    <td>Baixo (Paga clique caro)</td>
+                    <td class="highlight">Máximo (Desconto no CPC)</td>
+                </tr>
+                <tr>
+                    <td>Foco de Conversão</td>
+                    <td>Estética genérica</td>
+                    <td class="highlight">Psicologia de Luto & Urgência</td>
+                </tr>
+                <tr>
+                    <td>Experiência no Nicho</td>
+                    <td>Generalista</td>
+                    <td class="highlight">12 Anos de Especialização</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 60px;">Dúvidas de quem busca o <span>Próximo Nível</span></h2>
+        
+        <div class="faq-item">
+            <p class="faq-q">O Google Ads para funerárias realmente funciona?</p>
+            <p class="faq-a">Sim, é a ferramenta mais poderosa para o pronto atendimento. No entanto, sem a blindagem técnica correta, sua conta corre riscos constantes de suspensão.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Qual a vantagem real do Código Puro?</p>
+            <p class="faq-a">Velocidade e autoridade técnica. O robô do Google recompensa sites leves com um custo por clique menor. Na prática, você compra mais cliques com o mesmo orçamento.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Vocês atendem planos funerários nacionais?</p>
+            <p class="faq-a">Sim. Nossa estratégia é escalável e configurada para dominar regiões específicas ou o território nacional com precisão cirúrgica.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-info">
+            <div class="logo">WS ADWORDS</div>
+            <p style="color: var(--gold-primary); font-weight: 700; margin-top: 10px;">REFERÊNCIA NACIONAL EM PERFORMANCE FUNERÁRIA</p>
+        </div>
+        <p class="copyright">&copy; 2026 WS Agência Digital. Todos os direitos reservados. 12 Anos de Excelência.</p>
+    </div>
+</footer>
+
+</body>
+</html>
