@@ -115,6 +115,7 @@ img{max-width:100%;height:auto;display:block}
   max-width:1200px;margin:0 auto;padding:0 1.25rem;
   display:flex;align-items:center;justify-content:space-between;
   height:110px;gap:1rem;
+  flex-wrap:nowrap;overflow:visible;
 }
 
 /* LOGO */
@@ -353,11 +354,11 @@ img{max-width:100%;height:auto;display:block}
    ========================================== */
 @media(max-width:700px){
   .nav-lnk{display:none}
-  .hdr-in{height:66px}
-  .logo-ws{font-size:2.2rem}
-  .partner-img{height:34px}
+  .hdr-in{height:auto;padding:8px 1rem}
+  .partner-img{height:30px}
   .nums-grid{grid-template-columns:1fr 1fr}
   .sv-grid-mobile{grid-template-columns:1fr!important}
+  .ft-grid-resp{grid-template-columns:1fr!important;gap:2rem!important}
 }
 @media(max-width:480px){
   .btn-hdr{display:none}
@@ -820,7 +821,7 @@ img{max-width:100%;height:auto;display:block}
   <div class="wrap-lg">
 
     <!-- TOPO DO FOOTER -->
-    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid #1a1a1a;margin-bottom:2rem">
+    <div class="ft-grid-resp" style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid #1a1a1a;margin-bottom:2rem">
 
       <!-- MARCA -->
       <div>
