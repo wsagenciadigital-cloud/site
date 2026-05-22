@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agência Google Ads | WS Agência Digital — Google Partner desde 2014</title>
+<meta name="description" content="Agência Google Partner especializada em Google Ads e sites de alta conversão em código puro. Gestão por profissionais certificados. Mais leads, menor custo por clique.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://wsadwords.com.br/">
+<meta property="og:title" content="WS Agência Digital — Google Partner | Google Ads e Sites de Alta Conversão">
+<meta property="og:description" content="Gestão Google Ads por profissionais certificados. Quase R$2 milhões em verba gerenciada. 20 vagas a R$300/mês.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wsadwords.com.br/">
+<meta property="og:locale" content="pt_BR">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"WS Agência Digital","description":"Agência Google Partner especializada em gestão de Google Ads e criação de sites em código puro com SEO semântico.","url":"https://wsadwords.com.br","telephone":"+5516996480799","email":"wsagenciadigital@gmail.com","foundingDate":"2014","areaServed":"BR","hasCredential":"Google Partner"}
+</script>
+
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RSRWKXQD38"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date());
+  gtag('config','G-RSRWKXQD38');
+</script>
+<!-- Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-928759464"></script>
+<script>gtag('config','AW-928759464');</script>
+<script>
+function gtag_report_conversion(url){
+  var cb=function(){if(typeof(url)!='undefined'){window.location=url;}};
+  gtag('event','conversion',{'send_to':'AW-928759464/xuQ9CJec6aQcEKj97roD','event_callback':cb});
+  return false;
+}
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Georgia','Times New Roman',serif;
+  background:#0a0a0a;
+  color:#ffffff;
+  line-height:1.7;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;height:auto;display:block}
+
+:root{
+  --red:#CC0000;
+  --red-bright:#ff2222;
+  --gold:#c9a84c;
+  --gold-light:#e8c96a;
+  --bg:#0a0a0a;
+  --bg2:#111111;
+  --card:#181818;
+  --border:#2a2a2a;
+  --border2:#333333;
+  --txt:#ffffff;
+  --txt2:#cccccc;
+  --txt3:#aaaaaa;
+  --green:#25D366;
+  --green-dk:#1aab52;
+  --radius:12px;
+  --tr:0.3s ease;
+}
+
+/* ANIMATIONS */
+@keyframes pulso{
+  0%,100%{text-shadow:0 0 8px #ff0000,0 0 20px #ff0000;transform:scale(1)}
+  50%{text-shadow:0 0 18px #ff4444,0 0 40px #ff2222,0 0 60px #cc0000;transform:scale(1.04)}
+}
+@keyframes riscar{
+  0%{width:0}100%{width:100%}
+}
+@keyframes waPulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.55)}
+  60%{box-shadow:0 0 0 16px rgba(37,211,102,0)}
+}
+
+/* LAYOUT */
+.wrap{max-width:900px;margin:0 auto;padding:0 1.25rem}
+.wrap-lg{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+
+/* BOTÃO WHATSAPP */
+.btn-wa{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:1rem 2.5rem;border-radius:8px;border:none;cursor:pointer;
+  font-family:'Georgia',serif;font-size:1.05rem;font-weight:700;
+  background:var(--green);color:#fff;
+  text-transform:uppercase;letter-spacing:.5px;
+  transition:all var(--tr);
+  box-shadow:0 4px 20px rgba(37,211,102,.25);
+}
+.btn-wa:hover{background:var(--green-dk);transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.45)}
+.btn-wa svg{width:24px;height:24px;fill:currentColor;flex-shrink:0}
+.btn-wa-lg{font-size:1.15rem;padding:1.15rem 3rem}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+#hdr{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(10,10,10,.97);
+  border-bottom:1px solid var(--border);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  transition:box-shadow var(--tr);
+}
+.hdr-in{
+  max-width:1200px;margin:0 auto;padding:0 1.25rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:76px;gap:1rem;
+}
+
+/* LOGO */
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.logo-ws{
+  font-family:'Georgia','Times New Roman',serif;
+  font-size:2.8rem;font-weight:700;font-style:italic;
+  color:var(--red);letter-spacing:-.03em;line-height:1;
+}
+.logo-sub{
+  font-size:.68rem;font-weight:700;letter-spacing:2.5px;
+  text-transform:uppercase;color:#888;margin-top:2px;
+}
+
+.hdr-right{display:flex;align-items:center;gap:1.2rem}
+.partner-img{height:42px;width:auto}
+.nav-lnk{display:flex;gap:1.8rem;align-items:center}
+.nav-lnk a{
+  font-size:.78rem;font-weight:700;letter-spacing:.5px;
+  text-transform:uppercase;color:#aaa;transition:color var(--tr);
+}
+.nav-lnk a:hover{color:#fff}
+.btn-hdr{padding:.55rem 1.3rem;font-size:.82rem;border-radius:6px}
+
+/* ==========================================
+   HERO / OFERTA — BLOCO 1
+   ========================================== */
+#hero{
+  padding-top:96px;
+  padding-bottom:0;
+  background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(180,0,0,.13) 0%,transparent 65%),var(--bg);
+}
+.hero-intro{
+  text-align:center;
+  padding:3rem 1.25rem 2rem;
+  max-width:800px;
+  margin:0 auto;
+}
+.hero-eyebrow{
+  font-size:.8rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--red-bright);margin-bottom:1.2rem;display:block;
+  animation:pulso 2s ease-in-out infinite;
+}
+.hero-title{
+  font-size:clamp(1.8rem,4.5vw,3.2rem);font-weight:700;
+  line-height:1.18;margin-bottom:1rem;
+}
+.hl-red{
+  background:linear-gradient(135deg,#CC0000,#ff3333);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero-sub{
+  font-size:clamp(.95rem,1.8vw,1.1rem);color:var(--txt2);
+  max-width:640px;margin:0 auto;line-height:1.8;
+}
+
+/* OFERTA CARD — exato HTML aprovado */
+.oferta-section{
+  max-width:680px;
+  margin:2.5rem auto 0;
+  padding:0 1.25rem;
+}
+
+/* estilos internos do componente oferta (preservados exatos) */
+@keyframes pulso-oferta{
+  0%,100%{text-shadow:0 0 8px #ff0000,0 0 20px #ff0000;transform:scale(1)}
+  50%{text-shadow:0 0 18px #ff4444,0 0 40px #ff2222,0 0 60px #cc0000;transform:scale(1.04)}
+}
+@keyframes riscar-oferta{
+  0%{width:0}100%{width:100%}
+}
+.titulo-oferta{
+  display:block;
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:clamp(16px,3vw,22px);
+  font-weight:700;letter-spacing:3px;
+  color:#ff3333;text-align:center;
+  animation:pulso-oferta 1.6s ease-in-out infinite;
+  padding:18px 10px 10px;text-transform:uppercase;
+}
+.oferta-wrap{
+  background:#1a0000;border-radius:14px;
+  padding:10px 20px 20px;position:relative;overflow:hidden;
+}
+.preco-fundo{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:clamp(100px,22vw,190px);font-weight:700;
+  color:#7a2020;text-align:center;line-height:1;
+  position:relative;margin:0;padding:10px 0 0;display:block;
+}
+.risco-wrap{position:relative;display:inline-block}
+.risco{
+  position:absolute;top:50%;left:0;
+  height:9px;background:#ff2222;border-radius:4px;
+  animation:riscar-oferta 0.8s 0.3s ease forwards;width:0;
+}
+.vagas-bloco{text-align:center;margin-top:-10px}
+.vagas-num-of{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:clamp(38px,7vw,60px);font-weight:700;
+  color:#fff;display:block;
+}
+.vagas-label-of{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:14px;color:#aaa;letter-spacing:2px;display:block;margin-bottom:6px;
+}
+.preco-destaque-of{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:clamp(60px,12vw,105px);font-weight:700;
+  color:#fff;text-align:center;display:block;line-height:1;
+}
+.mes-of{font-size:clamp(22px,4vw,34px);color:#aaa}
+.divisor-of{border:none;border-top:1px solid #440000;margin:12px 20px}
+.rodape-of{
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:12px;color:#994444;text-align:center;
+  display:block;padding-bottom:4px;letter-spacing:.5px;
+}
+
+/* BOTÃO CTA PÓS-OFERTA */
+.cta-oferta{
+  text-align:center;
+  padding:2rem 1.25rem;
+}
+
+/* ==========================================
+   BLOCO 2 — PROVA SOCIAL MCC
+   ========================================== */
+#prova{
+  background:var(--bg);
+  padding:4rem 0;
+  border-top:1px solid #1a0000;
+}
+.prova-titulo-pulso{
+  display:block;
+  font-family:'Palatino Linotype',Georgia,serif;
+  font-size:clamp(1.4rem,4vw,2.4rem);
+  font-weight:700;letter-spacing:2px;
+  color:#ff3333;text-align:center;
+  animation:pulso-oferta 1.6s ease-in-out infinite;
+  text-transform:uppercase;
+  margin-bottom:1.2rem;
+}
+.prova-subtitulo{
+  font-family:'Georgia',serif;
+  font-size:clamp(1rem,2.2vw,1.35rem);
+  font-weight:700;color:#fff;
+  text-align:center;max-width:760px;
+  margin:0 auto 2.5rem;line-height:1.55;
+}
+.prova-subtitulo span{color:var(--gold-light);}
+
+/* Print MCC */
+.mcc-img-wrap{
+  max-width:900px;margin:0 auto 2.5rem;
+  padding:0 1.25rem;
+}
+.mcc-img-wrap img{
+  width:100%;border-radius:10px;
+  border:1px solid #2a2020;
+  box-shadow:0 4px 30px rgba(0,0,0,.5);
+}
+
+/* Quadro de números */
+.nums-wrap{
+  max-width:760px;margin:0 auto;padding:0 1.25rem;
+}
+.nums-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:1.2rem;margin-bottom:1.8rem;
+}
+.num-box{
+  background:#181818;border:1px solid #2a2a2a;
+  border-radius:var(--radius);padding:1.5rem 1rem;text-align:center;
+  transition:border-color var(--tr);
+}
+.num-box:hover{border-color:rgba(201,168,76,.4)}
+.num-val{
+  font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;
+  color:var(--gold-light);display:block;line-height:1.1;
+}
+.num-lbl{
+  font-size:.72rem;color:#aaa;text-transform:uppercase;
+  letter-spacing:1.5px;display:block;margin-top:.4rem;
+}
+
+/* Comentário CPC */
+.cpc-comment{
+  background:#0e0e0e;border-left:3px solid var(--gold);
+  border-radius:0 8px 8px 0;
+  padding:1.4rem 1.6rem;
+  max-width:760px;margin:0 auto;
+}
+.cpc-comment p{
+  font-size:.95rem;color:#cccccc;line-height:1.8;
+  font-style:italic;
+}
+.cpc-comment strong{color:var(--gold-light);font-style:normal}
+
+/* FAQ ACCORDION */
+.faq-it{background:#181818;border:1px solid #2a2a2a;border-radius:12px;overflow:hidden}
+.faq-q{
+  width:100%;background:none;border:none;text-align:left;
+  padding:1.2rem 1.5rem;
+  font-family:'Georgia',serif;font-size:.97rem;font-weight:700;color:#fff;
+  cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  transition:color .3s;
+}
+.faq-q:hover{color:var(--gold-light)}
+.faq-arr{font-size:1.3rem;color:var(--gold);transition:transform .3s;flex-shrink:0}
+.faq-it.open .faq-arr{transform:rotate(45deg)}
+.faq-a{
+  max-height:0;overflow:hidden;
+  transition:max-height .4s ease,padding .3s ease;
+  padding:0 1.5rem;font-size:.87rem;color:#cccccc;line-height:1.75;
+}
+.faq-it.open .faq-a{max-height:400px;padding:0 1.5rem 1.2rem}
+
+/* ==========================================
+   WA FLUTUANTE
+   ========================================== */
+.wa-fl{
+  position:fixed;bottom:1.4rem;right:1.4rem;
+  width:60px;height:60px;border-radius:50%;
+  background:var(--green);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,.35);
+  z-index:9999;transition:transform var(--tr);
+  animation:waPulse 2s infinite;
+}
+.wa-fl:hover{transform:scale(1.12)}
+.wa-fl svg{width:32px;height:32px;fill:currentColor}
+
+/* ==========================================
+   RESPONSIVO
+   ========================================== */
+@media(max-width:700px){
+  .nav-lnk{display:none}
+  .hdr-in{height:66px}
+  .logo-ws{font-size:2.2rem}
+  .partner-img{height:34px}
+  .nums-grid{grid-template-columns:1fr 1fr}
+  .sv-grid-mobile{grid-template-columns:1fr!important}
+}
+@media(max-width:480px){
+  .btn-hdr{display:none}
+  .logo-ws{font-size:2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HEADER ==================== -->
+<header id="hdr" role="banner">
+  <div class="hdr-in">
+    <a href="#hero" aria-label="WS Agência Digital">
+      <img src="logo_ws.png" alt="WS Agência Digital" style="height:54px;width:auto;display:block" width="54" height="54">
+    </a>
+
+    <nav class="nav-lnk" role="navigation" aria-label="Menu principal">
+      <a href="#hero">Oferta</a>
+      <a href="#prova">Resultados</a>
+      <a href="#faq">FAQ</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como Funciona</a>
+    </nav>
+
+    <div class="hdr-right">
+      <img src="google-partner-RGB-search.png" alt="Google Partner" class="partner-img" width="100" height="42">
+      <a href="https://wa.me/5516996480799"
+         onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+         class="btn-wa btn-hdr"
+         aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+        Falar Agora
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ==================== BLOCO 1: OFERTA ==================== -->
+<section id="hero" aria-labelledby="oferta-titulo" style="padding-top:96px;padding-bottom:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(180,0,0,.13) 0%,transparent 65%),var(--bg)">
+
+  <!-- OFERTA — HTML EXATO APROVADO -->
+  <div class="oferta-section">
+    <div class="oferta-wrap">
+      <span class="titulo-oferta">🎯 Gestão Google Ads &nbsp;·&nbsp; Oferta Limitada</span>
+      <div style="text-align:center">
+        <span class="risco-wrap">
+          <span class="preco-fundo">R$800</span>
+          <span class="risco"></span>
+        </span>
+      </div>
+      <div class="vagas-bloco">
+        <span class="vagas-label-of">apenas</span>
+        <span class="vagas-num-of">20 Vagas</span>
+      </div>
+      <hr class="divisor-of"/>
+      <span class="preco-destaque-of">R$ 300<span class="mes-of">/mês</span></span>
+      <hr class="divisor-of"/>
+      <span class="rodape-of">Após as 20 vagas, o valor regular volta a R$800/mês</span>
+    </div>
+  </div>
+
+  <!-- BOTÃO 1 -->
+  <div class="cta-oferta">
+    <a href="https://wa.me/5516996480799"
+       onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+       class="btn-wa btn-wa-lg"
+       aria-label="Garantir vaga a R$300 no WhatsApp">
+      <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+      Garantir Minha Vaga Agora
+    </a>
+  </div>
+</section>
+
+<!-- ==================== BLOCO 2: PROVA SOCIAL MCC ==================== -->
+<section id="prova" aria-labelledby="prova-titulo">
+  <div class="wrap-lg">
+
+    <span class="prova-titulo-pulso" id="prova-titulo">
+      São quase R$ 2 milhões gerenciados
+    </span>
+
+    <p class="prova-subtitulo">
+      Você acha que os clientes investiriam essa quantia<br>
+      se a WS não gerasse um excelente retorno, <span>lucro (ROI)</span>?
+    </p>
+
+    <!-- Print MCC -->
+    <div class="mcc-img-wrap">
+      <img src="mccws.jpg" alt="Painel Google Ads WS Agência Digital — quase R$2 milhões em verba gerenciada" width="900" height="500">
+    </div>
+
+    <!-- Quadro de números -->
+    <div class="nums-wrap">
+      <div class="nums-grid">
+        <div class="num-box">
+          <span class="num-val">R$1,95mi</span>
+          <span class="num-lbl">Verba Gerenciada</span>
+        </div>
+        <div class="num-box">
+          <span class="num-val">3,48mi</span>
+          <span class="num-lbl">Cliques Gerados</span>
+        </div>
+        <div class="num-box">
+          <span class="num-val">71,1mi</span>
+          <span class="num-lbl">Impressões</span>
+        </div>
+        <div class="num-box">
+          <span class="num-val">R$ 0,56</span>
+          <span class="num-lbl">CPC Médio</span>
+        </div>
+      </div>
+
+      <!-- Comentário CPC -->
+      <div class="cpc-comment">
+        <p>
+          Um <strong>CPC médio de R$0,56</strong> em campanhas que geraram quase R$2 milhões em verba 
+          não é coincidência — é o reflexo direto de um <strong>Índice de Qualidade elevado</strong> 
+          atribuído pelo próprio Google. Quanto maior a nota de qualidade, menor o custo por clique 
+          no leilão de anúncios. Isso significa que a WS não apenas gerencia campanhas — ela domina 
+          os critérios técnicos que o Google usa para premiar anunciantes eficientes, entregando 
+          <strong>mais tráfego qualificado com menor investimento</strong> para cada cliente.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOTÃO 2 — PÓS PROVA SOCIAL -->
+<div class="cta-oferta" style="padding:2.5rem 1.25rem;background:var(--bg)">
+  <a href="https://wa.me/5516996480799"
+     onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+     class="btn-wa btn-wa-lg"
+     aria-label="Garantir vaga a R$300 no WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+    Garantir Minha Vaga Agora
+  </a>
+</div>
+
+<!-- ==================== BLOCO 3: SOBRE / CREDENCIAIS ==================== -->
+<section id="sobre" aria-labelledby="sobre-titulo" style="background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(180,0,0,.08) 0%,transparent 65%),var(--bg);padding:5rem 0;border-top:1px solid #1a1a1a">
+  <div class="wrap" style="max-width:860px">
+
+    <!-- LINHA SUPERIOR: Selo esquerda + Pulsante direita -->
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin-bottom:3rem">
+
+      <!-- ESQUERDA: Selo Partner -->
+      <div style="display:flex;flex-direction:column;align-items:center;gap:.7rem">
+        <img src="google-partner-RGB-search.png"
+             alt="Google Partner — WS Agência Digital"
+             style="height:90px;width:auto">
+        <span style="font-family:'Georgia',serif;font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#aaaaaa;text-align:center">Agência Partner do Google</span>
+      </div>
+
+      <!-- DIREITA: Texto pulsante -->
+      <div style="flex:1;text-align:right;min-width:220px">
+        <span style="
+          display:inline-block;
+          font-family:'Palatino Linotype',Georgia,serif;
+          font-size:clamp(1.3rem,3.5vw,2.2rem);
+          font-weight:700;letter-spacing:2px;
+          color:#ff3333;text-transform:uppercase;
+          animation:pulso-oferta 1.6s ease-in-out infinite;
+          line-height:1.3;
+        ">No mercado<br>desde 2014</span>
+      </div>
+    </div>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <h2 id="sobre-titulo" class="hero-title" style="text-align:center;margin-bottom:1.2rem">
+      Sua Empresa Merece uma Agência que<br>
+      <span class="hl-red">Entende de Negócios Online</span> — Não Só de Anúncios
+    </h2>
+
+    <!-- SUBTÍTULO ATUALIZADO -->
+    <p class="hero-sub" style="text-align:center;max-width:780px;margin:0 auto">
+      Profissionais certificados em Google Ads, especialistas em SEO semântico,
+      desenvolvimento de website em código puro, copy e IA — trabalhando juntos
+      para gerar <strong>mais leads e vendas reais</strong> para seu negócio com
+      <strong>menor custo, maior qualidade e velocidade.</strong>
+    </p>
+
+  </div>
+</section>
+
+<!-- BOTÃO 3 — PÓS BLOCO 3 -->
+<div class="cta-oferta" style="padding:2.5rem 1.25rem;background:var(--bg);border-top:1px solid #1a1a1a">
+  <a href="https://wa.me/5516996480799"
+     onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+     class="btn-wa btn-wa-lg"
+     aria-label="Garantir vaga a R$300 no WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+    Garantir Minha Vaga Agora
+  </a>
+</div>
+
+<!-- ==================== BLOCO 4: SERVIÇOS ==================== -->
+<section id="servicos" aria-labelledby="sv-titulo" style="background:#111111;padding:5rem 0;border-top:1px solid #1a1a1a">
+  <div class="wrap-lg">
+
+    <div style="text-align:center;margin-bottom:3rem">
+      <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:50px;padding:.35rem 1.1rem;margin-bottom:1.2rem">Nossos Serviços</span>
+      <h2 id="sv-titulo" style="font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;margin-bottom:1rem">
+        Dois Serviços, Um Objetivo: <span style="background:linear-gradient(135deg,#c9a84c,#f0d878);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Mais Leads</span>
+      </h2>
+      <p style="color:#cccccc;font-size:.97rem;max-width:680px;margin:0 auto;line-height:1.75">
+        Complementares por design — um potencializa o outro e juntos formam uma máquina de geração de leads que trabalha 24 horas por você.
+      </p>
+    </div>
+
+    <div class="sv-grid-mobile" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+
+      <!-- Card Google Ads -->
+      <article style="background:#181818;border:1px solid rgba(204,0,0,.35);border-radius:16px;padding:2.5rem 2rem;background:linear-gradient(160deg,rgba(100,0,0,.12) 0%,#181818 55%)">
+        <div style="width:50px;height:50px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.2rem;background:rgba(204,0,0,.1);border:1px solid rgba(204,0,0,.2)">🎯</div>
+        <h3 style="font-size:1.25rem;margin-bottom:.8rem;color:#fff">Gestão de Google Ads</h3>
+        <p style="font-size:.88rem;color:#cccccc;line-height:1.7;margin-bottom:1.2rem">Gerenciamento por profissionais certificados pelo Google. Cada campanha é criada e otimizada para gerar leads qualificados com o menor custo por clique possível.</p>
+        <ul style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Pesquisa e estrutura de palavras-chave</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Palavras negativas para eliminar cliques inúteis</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Anúncios com copy focada em conversão</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Rastreamento de conversões GA4 + Ads</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Otimização contínua do Índice de Qualidade</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Relatório mensal de ROI real</li>
+        </ul>
+        <div style="border-top:1px solid #2a2a2a;padding-top:1.4rem;margin-top:1.4rem;display:flex;align-items:flex-end;justify-content:space-between;gap:1rem">
+          <div>
+            <span style="font-size:1.9rem;font-weight:700;color:#fff">R$ 300<span style="font-size:1rem;color:#aaa">/mês</span></span>
+            <span style="font-size:.78rem;color:var(--red-bright);font-weight:700;display:block;margin-top:.1rem">20 vagas com preço especial</span>
+          </div>
+          <span style="font-size:.95rem;color:#aaa;text-decoration:line-through">R$800/mês</span>
+        </div>
+        <a href="https://wa.me/5516996480799"
+           onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+           class="btn-wa"
+           style="width:100%;margin-top:1.2rem"
+           aria-label="Garantir vaga Google Ads">
+          <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+          Garantir Minha Vaga
+        </a>
+      </article>
+
+      <!-- Card Sites -->
+      <article style="background:#181818;border:1px solid #2a2a2a;border-radius:16px;padding:2.5rem 2rem">
+        <div style="width:50px;height:50px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:1.2rem;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2)">⚡</div>
+        <h3 style="font-size:1.25rem;margin-bottom:.8rem;color:#fff">Sites em Código Puro</h3>
+        <p style="font-size:.88rem;color:#cccccc;line-height:1.7;margin-bottom:1.2rem">HTML5, CSS3 e JavaScript puros — sem WordPress, sem plugins, sem lentidão. SEO semântico nativo, copy de conversão e carregamento abaixo de 1 segundo.</p>
+        <ul style="display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.5rem">
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> HTML5 semântico — SEO nativo no código</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Carregamento abaixo de 1 segundo</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> SEO técnico e semântico inclusos</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Copy focada em conversão e leads</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Integração GA4 + Google Ads</li>
+          <li style="font-size:.87rem;color:#cccccc;display:flex;align-items:flex-start;gap:.5rem"><span style="color:#25D366;font-weight:900;flex-shrink:0">✓</span> Índice de Qualidade máximo no Ads</li>
+        </ul>
+        <div style="border-top:1px solid #2a2a2a;padding-top:1.4rem;margin-top:1.4rem">
+          <span style="font-size:1.9rem;font-weight:700;color:#fff">R$ 1.000</span>
+          <span style="font-size:.78rem;color:var(--gold);font-weight:700;display:block;margin-top:.1rem">Entrega em até 7 dias</span>
+        </div>
+        <a href="https://wa.me/5516996480799"
+           onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+           class="btn-wa"
+           style="width:100%;margin-top:1.2rem"
+           aria-label="Solicitar site em código puro">
+          <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+          Solicitar Meu Site
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== BLOCO FAQ ==================== -->
+<section id="faq" aria-labelledby="faq-titulo" style="background:#111111;padding:5rem 0;border-top:1px solid #1a1a1a">
+  <div class="wrap">
+    <div style="text-align:center;margin-bottom:3rem">
+      <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:50px;padding:.35rem 1.1rem;margin-bottom:1.2rem">Dúvidas Frequentes</span>
+      <h2 id="faq-titulo" style="font-size:clamp(1.6rem,3.5vw,2.5rem);font-weight:700;margin-bottom:0">
+        Respostas Diretas para as <span style="background:linear-gradient(135deg,#CC0000,#ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Principais Dúvidas</span>
+      </h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:1rem;max-width:800px;margin:0 auto">
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">R$300 é muito barato — isso é real?<span class="faq-arr">+</span></button>
+        <div class="faq-a">Sim, é real e tem um motivo claro. Estamos abrindo 20 vagas com preço especial para construir novos casos de sucesso documentados. Nosso preço regular é R$800/mês — já acessível para uma agência Google Partner com quase R$2 milhões em verba gerenciada. Após as 20 vagas, o valor volta ao regular. Quem entrar agora mantém o preço especial.</div>
+      </div>
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">Qual o valor mínimo de investimento em anúncios?<span class="faq-arr">+</span></button>
+        <div class="faq-a">O valor da gestão (R$300/mês) é separado do investimento em mídia. A verba vai diretamente para o Google — não passa pela WS. Recomendamos no mínimo R$600/mês em verba para resultados consistentes em pequeno porte. O ideal para o seu segmento conversamos no diagnóstico gratuito.</div>
+      </div>
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">Em quanto tempo vejo os primeiros leads?<span class="faq-arr">+</span></button>
+        <div class="faq-a">Campanhas bem configuradas geram tráfego qualificado desde o primeiro dia. Os primeiros leads geralmente aparecem na primeira semana. A otimização para reduzir custo e aumentar conversão acontece ao longo do primeiro mês com base nos dados reais da campanha.</div>
+      </div>
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">Por que código puro é melhor que WordPress?<span class="faq-arr">+</span></button>
+        <div class="faq-a">WordPress carrega dezenas de arquivos desnecessários, plugins que travam e dependências vulneráveis. Sites em código puro carregam em menos de 1 segundo, têm HTML semântico nativo que o Google lê perfeitamente, zero vulnerabilidades e geram Índice de Qualidade máximo — reduzindo diretamente o custo por clique nos anúncios.</div>
+      </div>
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">Preciso do site da WS para contratar a gestão de Ads?<span class="faq-arr">+</span></button>
+        <div class="faq-a">Não. Você pode contratar apenas a gestão e usar seu site atual. Porém, se o site for lento ou sem estrutura de conversão, isso limita o desempenho e aumenta o custo por lead. Avaliamos o site no diagnóstico gratuito antes de qualquer recomendação.</div>
+      </div>
+
+      <div class="faq-it">
+        <button class="faq-q" aria-expanded="false">Como é o atendimento após contratar?<span class="faq-arr">+</span></button>
+        <div class="faq-a">Atendimento direto via WhatsApp com resposta em até 2 horas úteis. Você fala com o gestor responsável pela sua campanha — sem intermediários, sem chatbot. Relatório mensal de performance com todos os números detalhados.</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- BOTÃO 4 — PÓS SERVIÇOS -->
+<div class="cta-oferta" style="padding:2.5rem 1.25rem;background:#111111;border-top:1px solid #1a1a1a">
+  <a href="https://wa.me/5516996480799"
+     onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+     class="btn-wa btn-wa-lg"
+     aria-label="Falar com especialista no WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+    Falar com Especialista
+  </a>
+</div>
+
+<!-- ==================== BLOCO 5: COMO FUNCIONA + NOSSA EXPERTISE ==================== -->
+<section id="processo" aria-labelledby="proc-titulo" style="background:#0a0a0a;padding:5rem 0;border-top:1px solid #1a1a1a">
+  <div class="wrap-lg">
+
+    <!-- COMO FUNCIONA -->
+    <div style="text-align:center;margin-bottom:3rem">
+      <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:50px;padding:.35rem 1.1rem;margin-bottom:1.2rem">Como Funciona</span>
+      <h2 id="proc-titulo" style="font-size:clamp(1.6rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1rem">
+        Do Primeiro Contato ao <span style="background:linear-gradient(135deg,#CC0000,#ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Primeiro Lead</span>
+      </h2>
+      <p style="color:#cccccc;font-size:.97rem;max-width:720px;margin:0 auto;line-height:1.75">
+        Um processo claro, sem enrolação. Sabemos exatamente o que fazer e quando fazer — porque percorremos esse caminho centenas de vezes em mais de uma década de mercado.
+      </p>
+    </div>
+
+    <!-- 4 STEPS -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem;margin-bottom:5rem">
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem">
+        <div style="width:36px;height:36px;border-radius:50%;background:#CC0000;color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">1</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;color:#fff">Diagnóstico Gratuito</h3>
+        <p style="font-size:.85rem;color:#cccccc;line-height:1.65">Analisamos sua presença digital, concorrentes e identificamos as maiores oportunidades de lead imediato. Sem custo, sem compromisso.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem">
+        <div style="width:36px;height:36px;border-radius:50%;background:#CC0000;color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">2</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;color:#fff">Estratégia e Palavras-Chave</h3>
+        <p style="font-size:.85rem;color:#cccccc;line-height:1.65">Mapeamos as palavras com real intenção de compra. Definimos persona, negativamos termos irrelevantes e estruturamos o funil antes de gastar um centavo.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem">
+        <div style="width:36px;height:36px;border-radius:50%;background:#CC0000;color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">3</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;color:#fff">Campanha no Ar em 48h</h3>
+        <p style="font-size:.85rem;color:#cccccc;line-height:1.65">Criamos e ativamos as campanhas com rastreamento completo. GA4 e Google Ads integrados para que cada lead seja rastreado até a origem.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem">
+        <div style="width:36px;height:36px;border-radius:50%;background:#CC0000;color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-bottom:1rem">4</div>
+        <h3 style="font-size:1rem;margin-bottom:.5rem;color:#fff">Otimização Contínua</h3>
+        <p style="font-size:.85rem;color:#cccccc;line-height:1.65">Acompanhamos diariamente. Ajustamos lances, pausamos o que não converte, escalamos o que gera ROI. Relatório mensal com números reais.</p>
+      </div>
+
+    </div>
+
+    <!-- NOSSA EXPERTISE -->
+    <div style="text-align:center;margin-bottom:2.5rem">
+      <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.3);border-radius:50px;padding:.35rem 1.1rem;margin-bottom:1.2rem">Nossa Expertise</span>
+      <h2 style="font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700">
+        Especialistas em Cada Área, <span style="background:linear-gradient(135deg,#c9a84c,#f0d878);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Unidos por Um Objetivo</span>
+      </h2>
+    </div>
+
+    <!-- 5 CARDS EXPERTISE -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem">
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+        <span style="font-size:2rem;display:block;margin-bottom:.8rem">🏆</span>
+        <h4 style="font-size:.95rem;font-weight:700;color:var(--gold-light);margin-bottom:.4rem">Google Ads</h4>
+        <p style="font-size:.8rem;color:#cccccc;line-height:1.55">Certificados pelo Google. Acesso a recursos exclusivos do programa Google Partner.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+        <span style="font-size:2rem;display:block;margin-bottom:.8rem">🔍</span>
+        <h4 style="font-size:.95rem;font-weight:700;color:var(--gold-light);margin-bottom:.4rem">SEO Semântico</h4>
+        <p style="font-size:.8rem;color:#cccccc;line-height:1.55">SEO técnico e semântico nativo. HTML5 semântico, schema markup e Core Web Vitals perfeitos.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+        <span style="font-size:2rem;display:block;margin-bottom:.8rem">⚡</span>
+        <h4 style="font-size:.95rem;font-weight:700;color:var(--gold-light);margin-bottom:.4rem">Criação de Site</h4>
+        <p style="font-size:.8rem;color:#cccccc;line-height:1.55">Código puro sem dependências. Sites ultra-rápidos que o Google premia com Índice de Qualidade máximo.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+        <span style="font-size:2rem;display:block;margin-bottom:.8rem">✍️</span>
+        <h4 style="font-size:.95rem;font-weight:700;color:var(--gold-light);margin-bottom:.4rem">Copy &amp; Persuasão</h4>
+        <p style="font-size:.8rem;color:#cccccc;line-height:1.55">Textos que eliminam objeções e conduzem o visitante à ação. Cada palavra trabalhada para converter.</p>
+      </div>
+
+      <div style="background:#181818;border:1px solid #2a2a2a;border-radius:12px;padding:1.8rem 1.5rem;text-align:center;transition:border-color .3s,transform .3s" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='#2a2a2a';this.style.transform='translateY(0)'">
+        <span style="font-size:2rem;display:block;margin-bottom:.8rem">🤖</span>
+        <h4 style="font-size:.95rem;font-weight:700;color:var(--gold-light);margin-bottom:.4rem">IA Aplicada</h4>
+        <p style="font-size:.8rem;color:#cccccc;line-height:1.55">Inteligência artificial integrada ao processo para escalar resultados sem aumentar custo operacional.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BOTÃO — PÓS SERVIÇOS -->
+<div class="cta-oferta" style="padding:2.5rem 1.25rem;background:#111111;border-top:1px solid #1a1a1a">
+  <a href="https://wa.me/5516996480799"
+     onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+     class="btn-wa btn-wa-lg"
+     aria-label="Garantir vaga no WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+    Garantir Minha Vaga Agora
+  </a>
+</div>
+
+<!-- ==================== CTA FINAL ==================== -->
+<section id="cta-final" aria-labelledby="ctaf-titulo" style="background:linear-gradient(135deg,rgba(180,0,0,.18) 0%,#0a0a0a 45%,rgba(201,168,76,.06) 100%);padding:6rem 0;text-align:center;border-top:1px solid #1a1a1a">
+  <div class="wrap" style="max-width:860px">
+    <h2 id="ctaf-titulo" style="font-size:clamp(1.8rem,4vw,3rem);font-weight:700;margin-bottom:1.2rem">
+      Pronto para Transformar <span style="background:linear-gradient(135deg,#CC0000,#ff3333);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Cliques em Leads Reais?</span>
+    </h2>
+    <p style="color:#cccccc;max-width:600px;margin:0 auto 2.5rem;font-size:1rem;line-height:1.8">
+      Enquanto seus concorrentes lutam com sites lentos e campanhas mal configuradas, sua empresa pode operar com a expertise de quem gerenciou quase R$2 milhões em verba. O primeiro passo é gratuito e sem compromisso.
+    </p>
+    <a href="https://wa.me/5516996480799"
+       onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+       class="btn-wa btn-wa-lg"
+       aria-label="Quero começar — falar no WhatsApp">
+      <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+      Quero Começar — Falar no WhatsApp
+    </a>
+    <span style="font-size:.82rem;color:#666;display:block;margin-top:1.2rem">
+      ⚡ Resposta em até 2h úteis &nbsp;·&nbsp; Diagnóstico gratuito &nbsp;·&nbsp; Sem compromisso
+    </span>
+  </div>
+</section>
+
+</main>
+
+<!-- ==================== RODAPÉ ==================== -->
+<footer role="contentinfo" style="background:#090909;border-top:1px solid #1a1a1a;padding:3.5rem 0 1.5rem">
+  <div class="wrap-lg">
+
+    <!-- TOPO DO FOOTER -->
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid #1a1a1a;margin-bottom:2rem">
+
+      <!-- MARCA -->
+      <div>
+        <div style="margin-bottom:.8rem">
+          <img src="logo_ws.png" alt="WS Agência Digital" style="height:70px;width:auto;display:block" width="70" height="70">
+        </div>
+        <p style="font-size:.87rem;color:#aaaaaa;max-width:270px;line-height:1.7;margin-bottom:.7rem">
+          12 anos transformando investimento em marketing digital em leads e vendas reais. Google Partner certificado. Especialistas em negócios online.
+        </p>
+        <span style="font-size:.82rem;color:#666;font-style:italic;display:block">Nossa especialidade é o seu sucesso!</span>
+      </div>
+
+      <!-- NAVEGAÇÃO -->
+      <div>
+        <h4 style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;margin-bottom:1.2rem">Navegação</h4>
+        <ul style="display:flex;flex-direction:column;gap:.7rem">
+          <li><a href="#hero" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Oferta Especial</a></li>
+          <li><a href="#prova" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Resultados</a></li>
+          <li><a href="#servicos" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Serviços</a></li>
+          <li><a href="#processo" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Nossa Expertise</a></li>
+          <li><a href="#processo" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Como Funciona</a></li>
+          <li><a href="#faq" style="font-size:.87rem;color:#aaaaaa;transition:color .3s" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">Dúvidas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTATO -->
+      <div>
+        <h4 style="font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#c9a84c;margin-bottom:1.2rem">Contato</h4>
+        <ul style="display:flex;flex-direction:column;gap:.7rem">
+          <li>
+            <a href="https://wa.me/5516996480799"
+               onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+               style="font-size:.87rem;color:#aaaaaa;transition:color .3s;display:flex;align-items:center;gap:.4rem"
+               onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'"
+               aria-label="WhatsApp (16) 99648-0799">
+              📱 (16) 99648-0799
+            </a>
+          </li>
+          <li>
+            <a href="mailto:wsagenciadigital@gmail.com"
+               style="font-size:.87rem;color:#aaaaaa;transition:color .3s;display:flex;align-items:center;gap:.4rem"
+               onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#aaaaaa'">
+              ✉ wsagenciadigital@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM DO FOOTER -->
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+      <p style="font-size:.77rem;color:#555">© 2026 WS Agência Digital. Todos os direitos reservados. &nbsp;·&nbsp; Google Partner desde 2014</p>
+      <img src="google-partner-RGB-search.png" alt="Google Partner" style="height:30px;width:auto;opacity:.7">
+    </div>
+
+  </div>
+</footer>
+
+<!-- WA FLUTUANTE -->
+<a href="https://wa.me/5516996480799"
+   onclick="return gtag_report_conversion('https://wa.me/5516996480799');"
+   class="wa-fl" target="_blank" rel="noopener noreferrer"
+   aria-label="Falar com a WS Agência Digital no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 2C8.28 2 2 8.28 2 16c0 2.45.63 4.82 1.83 6.92L2 30l7.25-1.9A13.93 13.93 0 0016 30c7.72 0 14-6.28 14-14S23.72 2 16 2zm6.38 19.28c-.35-.18-2.07-1.02-2.39-1.14-.32-.12-.56-.18-.79.18-.23.35-.9 1.14-1.11 1.37-.2.24-.41.26-.76.09-.35-.18-1.48-.55-2.82-1.75-1.04-.93-1.74-2.08-1.95-2.43-.2-.35-.02-.54.16-.72.16-.16.35-.41.53-.61.18-.21.23-.35.35-.59.12-.23.06-.44-.03-.62-.09-.18-.79-1.9-1.08-2.6-.28-.68-.57-.59-.79-.6-.2-.01-.44-.01-.67-.01-.23 0-.62.09-.94.44-.32.35-1.23 1.2-1.23 2.92 0 1.72 1.26 3.38 1.43 3.62.18.23 2.47 3.77 5.98 5.2.84.34 1.49.54 2 .7.84.26 1.6.23 2.2.14.67-.1 2.07-.85 2.36-1.66.29-.82.29-1.52.2-1.66-.08-.15-.32-.24-.67-.41z"/></svg>
+</a>
+
+<script>
+// FAQ Accordion
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',function(){
+    const it=this.closest('.faq-it');
+    const open=it.classList.contains('open');
+    document.querySelectorAll('.faq-it.open').forEach(el=>{
+      el.classList.remove('open');
+      el.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    });
+    if(!open){it.classList.add('open');this.setAttribute('aria-expanded','true');}
+  });
+});
+
+// Header sombra no scroll
+const hdr=document.getElementById('hdr');
+window.addEventListener('scroll',()=>{
+  hdr.style.boxShadow=window.scrollY>10?'0 2px 24px rgba(0,0,0,.7)':'none';
+},{passive:true});
+
+// Scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t){e.preventDefault();const top=t.getBoundingClientRect().top+window.scrollY-78;window.scrollTo({top,behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
